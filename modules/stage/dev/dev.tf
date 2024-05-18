@@ -1,6 +1,6 @@
 module "s3_bucket" {
   source = "../../common/s3"
-  bucket_name = "ankit-training-s3-bucket-dev"
+  bucket_name = var.bucket_name
 }
 
 module "distribution" {
